@@ -1,0 +1,747 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+body {
+    background-color: #000;
+    height:100vh;
+}
+
+.titleBox {
+    text-align: center;
+    width: 54vw;
+    height: 59vh;
+    margin: 15vh auto 0;
+    color: #fff;
+}
+
+.textLine {
+    background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 4.19vw;
+    margin-bottom: 0.5vh;
+}
+
+.buy {
+    color: #fff;
+    width: 11.62vw;
+    height: 8.44vh;
+    border-radius: 3vw;
+    border: 2px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 2.57vw;
+    margin: 11.53vh auto 1.92vh;
+    position: relative;
+}
+
+.rotateImg {
+    position: absolute; 
+    width: 30.97vw;
+    height: 27.86vh;
+    left: -13.68vw;
+    top: 47.08vh;
+    transform: rotate(-56.36deg);
+    z-index: 200;
+    background: url(/static/img/Group.svg) no-repeat;
+    background-size:  100%;
+}
+.right{
+    background: url(/static/img/arrow-right.svg) no-repeat;
+    background-size:  100%;
+}
+/* 阴影 */
+.shadow1 {
+    position: absolute;
+    width: 16.88vw;
+    height: 16.88vw;
+    left: -8.54vw;
+    top: -5.34vh;
+    background: #01DEEA;
+    filter: blur(10.45vw);
+}
+
+.shadow2 {
+    position: absolute;
+    width: 16.88vw;
+    height: 16.88vw;
+    left: 89.26vw;
+    top: 76.6vh;
+    background: #01B2EA;
+    filter: blur(10.45vw);
+}
+
+.shadow3 {
+    position: absolute;
+    width: 6.93vw;
+    height: 28.205vh;
+    left: 66.70vw;
+    top: 15.17vh;
+    background: #FCEA4C;
+    filter: blur(3.12vw);
+}
+
+.shadow4 {
+    position: absolute;
+    width: 16.15vw;
+    height: 16.15vw;
+    left: 57.11vw;
+    top: 44.76vh;
+    background: rgba(11, 240, 185, 0.68);
+    filter: blur(5.211vw);
+}
+
+.shadow5 {
+    position: absolute;
+    width: 15.29vw;
+    height: 15.29vw;
+    left: 5.471vw;
+    top: 120vh;
+    background: #01DEEA;
+    filter: blur(10.45vw);
+    z-index: -10;
+}
+
+.title2 {
+    font-family: Inter;
+    font-size: 4.58vw;
+    font-weight: 500;
+    line-height: 8.333vh;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    width: 35.28vw;
+    height: 8.333vh;
+    left: 11.63vw;
+    top: 108.82vh;
+}
+
+.title2::after {
+    content: '';
+    position: absolute;
+    right: -37vw;
+    bottom: 2.16vh;
+    width: 37.87vw;
+    height: 2px;
+    background: #929292;
+}
+
+.chartBox {
+    width: 68.78vw;
+    height: 64.52vh;
+    background-color: #141619;
+    margin: 58vh auto 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.chartTitle {
+    position: absolute;
+    width: 50.15vw;
+    height: 7.15vh;
+    left: 6.85vw;
+    top: 4.12vh;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.59vw;
+    line-height: 120%;
+    color: #FFFFFF;
+}
+
+.chartTitle2 {
+    position: absolute;
+    width: 30.05vw;
+    height: 4.807vh;
+    left: 6.85vw;
+    top: 14.12vh;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.39vw;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+
+.largeText {
+    position: absolute;
+    width: 9.39vw;
+    height: 12.82vh;
+    left: 6.85vw;
+    top: 16.12vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.exhibits {
+    width: 68.78vw;
+    height: 139.42vh;
+    margin: 3.09vh auto 0;
+    position: relative;
+}
+
+.exhibits .group2 {
+    width: 33.87vw;
+    height: 72.75vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #000;
+    border: 1px solid;
+    border-image-source: linear-gradient(137.67deg, #01F2AA 0%, #01DCEE 100%); 
+    border-image-slice: 1;
+}
+.exhibits .group2>.textList{
+    height: 10.47vh;
+    width: 26.58vw;
+    font-family: Inter;
+    font-weight: 500;
+    line-height: 5.23vh;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#FF5C00;
+    font-size: 2.075vw;
+    display: block;
+    margin: 5.66vh auto 0;
+}
+.exhibitsImg{
+    display: block;
+    width: 23.6vw;
+    height: 20vh;
+    transform: rotate(-90deg);
+    margin: 15vh auto 0;
+    background: url(/static/img/Group.svg) no-repeat;
+    background-size:  100%;
+}
+
+.micBox{
+    width: 33.87vw;
+    height: 42.52vh;
+    border: 1px solid;
+    border-image-source: linear-gradient(248.35deg, #941970 1.15%, #572E91 100.6%);
+    border-image-slice: 1;
+    background-color: #000;
+    position: absolute;
+    left: 0;
+    top: 75.1vh;
+}
+
+.micList1{
+    position: absolute;
+    top:3.205vh;
+    left:2.918vw;
+    height: 36.53vh;
+    width: 12.92vw;
+    border-radius: 5px;
+    background-color: #343431;
+    overflow: hidden;
+}
+.micList1 .frame1{
+    width: 10.422vw;
+    height: 10.422vw;                  
+    position: absolute;
+    top: 2.136vh;
+    left: 0.781vw;
+    background: url(/static/img/Frame1.svg) no-repeat;
+    background-size:  100%;
+}
+.micList1>p{
+    position: absolute;
+    width: 100%;
+    height: 3.22vh;
+    left: 2.136vw;
+    top: 28.418vh;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.117vw;
+    line-height: 130%;
+    background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.micList2 .frame2{
+    width: 8.494vw;
+    height: 8.494vw;
+    position: absolute;
+    top: 4.7vh;
+    left: 2.97vw;
+    background: url(/static/img/Frame2.svg) no-repeat;
+    background-size:  100%;
+}
+.micList2{
+    position: absolute;;
+    top: 3.205vh;
+    left: 18.182vw;
+    height: 36.53vh;
+    width: 12.92vw;
+    border-radius: 5px;
+    background-color: #343431;
+    overflow: hidden;
+}
+.micList2>p{
+    position: absolute;
+    width: 100%;
+    height: 3.22vh;
+    left: 3.595vw;
+    top: 28.418vh;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.117vw;
+    line-height: 130%;
+    background: linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+
+.shadow6{
+    position: absolute;
+    width: 7.66vw;
+    height: 7.66vw;
+    left: -4.533vw;
+    top: 5.982vh;
+    background: rgba(11, 240, 185, 0.68);
+    filter: blur(5.211vw);
+}
+.shadow7{
+    position: absolute;
+    width: 7.66vw;
+    height: 7.66vw;
+    left: 2.97vw;
+    top: 23.39vh;
+    background: #B1A53D;
+    filter: blur(5.211vw);
+}
+.footerText{
+    width: 33.87vw;
+    height: 16.452vh;
+    position: absolute;
+    left: 0;
+    top: 120.16vh;
+    background: #181818;
+}
+.footerText>h1{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2.754vw;
+    text-align: center;
+    margin-top: 5.021vh;
+    background-image:-webkit-linear-gradient(90deg, #00F5A0 0%, #00D9F5 100%);
+    -webkit-background-clip:text;
+    background-clip: text;
+    -webkit-text-fill-color:transparent;
+}
+.bigExhibits{
+    width: 33.87vw;
+    height: 94.337vh;
+    position: absolute;
+    left: 34.9vw;
+    top: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+.head{
+    margin: 4.162vh 0 0 5.05vw;
+    width: 32.11vw;
+    height: 37.39vh;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.353vw;
+    line-height: 8.333vh;
+    background: linear-gradient(90deg, #FFE259 0%, #FFA751 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.support{
+    padding: 0.2vw;
+    width: 25.24vw;
+    height: 5.448vh;
+    background: #0F896E;
+    border-radius: 5px;
+    position: absolute;
+    top: 23.61vh;
+    left:5.054vw;
+    color: #fff;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.357vw;
+    text-align: center;
+}
+.btnBox{
+    position: absolute;
+    width: 25.762vw;
+    height: 48.5vh;
+    left: 4.794vw;
+    top: 38.78vh;
+}
+.btnTask{
+    display: flex;
+    justify-content:start;
+}
+.btnTask>ul{
+    flex: 1;
+    display: flex;
+    justify-content:space-evenly;
+}
+.btnTask>ul>li{
+    background-color: #303030;  
+    width: 3.474vw;
+    height: 9.508vh;
+    border-radius: 5px;
+    font-size: 1.037vw;
+    color: #fff;
+    line-height: 7.508vh;
+    text-align: center;
+    padding: 1.319vh;
+    z-index: 100;
+}
+.btnLinux{
+    margin: 4.487vh auto;
+    height: 6.196vh;
+    display: flex;
+    justify-content: space-between;
+}
+.btnLinux>div{
+    background-color: #303030;  
+    width: 11.674vw;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 6.196vh;
+    font-size: 2.215vw;
+    border-radius: 5px;
+    z-index: 100;
+}
+.CBOx{
+    width: 100%;
+    height: 23.824vh;
+    background-color: #303030;  
+    border-radius: 5px;
+    position: relative;
+    z-index: 100;
+
+}
+.CUPBOx{
+    width: 100%;
+    height: 18.824vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+.CUPBOx>.cpu{
+    width: 8.91vw;
+    height: 9.93vh;
+    background-color: #515050;
+    margin-top: 5.94vh;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 9.93vh;
+    font-size: 1.437vw;
+    color: #fff;
+}
+.CUPtext{
+    color: #fff;
+    text-align: center;
+    font-size: 1.137vw;
+}
+
+.shadow8{
+    position: absolute;
+    width: 16.1vw;
+    height: 16.1vw;
+    left: -19.06vw;
+    top: 3.125vh;
+    background: #01DEEA;
+    filter: blur(10.42vw);
+    z-index: 10;
+}
+
+.shadow9{
+    position: absolute;
+    width: 11.62vw;
+    height: 11.62vw;
+    left: 10.86vw;
+    top: -60.38vh;
+    background: #FFF858;
+    filter: blur(10.42vw);
+}
+
+.lineChart{
+    width: 33.87vw;
+    height: 39.957vh;
+    position: absolute;
+    left: 34.9vw;
+    top: 96.687vh;
+    background-color: #000;
+    overflow: hidden;
+}
+.shadow10{
+    position: absolute;
+    width: 11.04vw;
+    height: 11.04vw;
+    left: 24.7vw;
+    top: -2.67vh;
+    background: #8042D5;
+    filter: blur(3.126vw);
+}
+.shadow11{
+    position: absolute;
+    width: 22.08vw;
+    height: 22.08vw;
+    left: -5.367vw;
+    top: 5.876vh;
+    background: #BF2091;
+    filter: blur(10.42vw);
+}
+.shadow12{
+    position: absolute;
+    width:35.13vw;
+    height:35.13vw;
+    left: 50.54vw;
+    top: 246.15vh;
+    background: rgba(215, 207, 20, 0.51);
+    filter: blur(10.42vw);
+    z-index: -100;
+}
+.lineBox{
+    position: absolute;
+    width: 20.53vw;
+    height: 30.34vh;
+    left: 6.67vw;
+    top: 5.876vh;
+}
+.line1{
+    position: absolute;
+    width: 20.53vw;
+    height: 0px;
+    left: 0;
+    top: 0;
+    border: 2.27876px dashed rgba(255, 255, 255, 0.5);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.line2{
+    position: absolute;
+    width: 20.53vw;
+    height: 0px;
+    left: 0;
+    top: 33.33%;
+    border: 2.27876px dashed rgba(255, 255, 255, 0.5);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.line3{
+    position: absolute;
+    width: 20.53vw;
+    height: 0px;
+    left: 0;
+    bottom: 33.33%;
+    border: 2.27876px dashed rgba(255, 255, 255, 0.5);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+.line4{
+    position: absolute;
+    width: 20.53vw;
+    height: 0px;
+    left: 0;
+    bottom: 0;
+    border: 2.27876px dashed rgba(255, 255, 255, 0.5);
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.lineGroup{
+    width: 15.64vw;
+    height: 12.39vh;
+    position: absolute;
+    top: 8.876vh;
+    left: -3vw;
+    transform: rotate(-90deg);
+    background: url(/static/img/Group.svg) no-repeat;
+    background-size:  100%;
+}
+.jj{
+    position: absolute;
+    width: 7.764vw;
+    height: 7.764vw;
+    left: 9.28vw;
+    top: 14.978vh;
+    background: url(/static/img/yingbi.svg) no-repeat;
+    background-size:  100%;
+}
+
+.title4 {
+    font-family: Inter;
+    font-size: 4.58vw;
+    font-weight: 500;
+    line-height: 8.333vh;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    width: 58vw;
+    height: 8.333vh;
+    position: absolute;
+    left: -2.4vw; 
+    top: 435.17vh; 
+}
+
+.title4::after {
+    content: '';
+    position: absolute;
+    right: -28.5vw;
+    bottom: 2.16vh;
+    width: 44vw;
+    height: 2px;
+    background: #929292;
+}
+
+.bannerList{
+    width: 68.78vw;
+    height: 47.54vh;
+    margin: 33.66vh auto 0;
+    position: relative;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.title3 {
+    font-family: Inter;
+    font-size: 4.58vw;
+    font-weight: 500;
+    line-height: 8.333vh;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #fff;
+    width: 58vw;
+    height: 8.333vh;
+    position: absolute;
+    left: 13.3vw; 
+    top: 355.17vh; 
+}
+
+.title3::after {
+    content: '';
+    position: absolute;
+    right: -12.5vw;
+    bottom: 2.16vh;
+    width: 12.5vw;
+    height: 2px;
+    background: #929292;
+}
+.chartTech{
+    width: 68.78vw;
+    height: 83.65vh;
+    margin: 33.66vh auto 0;
+    background:url(/static/img/techSpecs.svg) no-repeat;
+    background-size: 100%;
+}
+.bannerimg{
+    width: 21.88vw;
+    height: 37.28vh;
+    background-color: #000;
+    color: #fff;
+    position: absolute;
+    top: 3vh;
+    border: 1px solid #878787;
+    border-radius: 4px;
+}
+.bannerimg>.img1{
+    display: block;
+    width: 21.88vw;
+    height: 30.28vh;
+    margin: 0.5vh auto 0;
+    background:url(/static/img/jiank3.svg) no-repeat;
+    background-size: 100%;
+}
+
+.bannerimg>.img2{
+    display: block;
+    width: 21.88vw;
+    height: 30.28vh;
+    margin: 0.5vh auto 0;
+    background:url(/static/img/jiank2.svg) no-repeat;
+    background-size: 100%;
+}
+.bannerimg>.img3{
+    display: block;
+    width: 21.88vw;
+    height: 30.28vh;
+    margin: 0.5vh auto 0;
+    background:url(/static/img/jiank.svg) no-repeat;
+    background-size: 100%;
+}
+.bannerimg>.img4{
+    display: block;
+    width: 21.88vw;
+    height: 30.28vh;
+    background:url(/static/img/Rectangle2.svg) no-repeat;
+    background-size: 100%;
+}
+.bannerimg>.img5{
+    display: block;
+    width: 21.88vw;
+    height: 30.28vh;
+    background:url(/static/img/Rectangle1.svg) no-repeat;
+    background-size: 100%;
+}
+.bannerimg>p{
+    font-size: 1.197vw;
+    text-align: center;
+    line-height: 7vh;
+} 
+
+.prev{
+    width: 2.605vw;
+    height: 2.605vw;
+    background: url(/static/img/chevron-left.svg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom:0vh;
+    right: 4vw;
+    cursor: pointer;
+}
+
+.next{
+    width: 2.605vw;
+    height: 2.605vw;
+    background: url(/static/img/chevron-right.svg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    bottom:0vh;
+    right: 1vw;
+    cursor: pointer;
+}
+
+.Ghzbox{
+    width: 42.2vw;
+    height: 20.19vh;
+    background: url(/static/img/Frame.svg) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    left: 7.139vw;
+    top: 39.42vh;
+}
+.shadow13{
+    position: absolute;
+    width: 19.228vw;
+    height: 19.228vw;
+    left: 5.784vw;
+    top: 420vh;
+    background: #01DEEA;
+    filter: blur(10.42vw);
+}
