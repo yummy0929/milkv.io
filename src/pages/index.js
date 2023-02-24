@@ -129,7 +129,7 @@ function toScroll(e) {
             <div className={styles.on2_item}>
               <div>
                   <div className={styles.icon8}></div>
-                <p>high performance</p>
+                <p>High performance</p>
               </div>
             </div>
           </div>
@@ -146,7 +146,7 @@ function toScroll(e) {
             <div className={styles.on3_shadow2}></div>
             <div className={styles.on3_shadow3}></div>
             <div className={styles.on3_text}>
-              <div style={{ borderRadius: "5px" }}>Starting from $5</div>
+              <div style={{ borderRadius: "5px" }}>Starting from $9</div>
             </div>
             <div className={styles.on3_img}> </div>
             <h1 className={styles.on3_h1}>World Debut</h1>

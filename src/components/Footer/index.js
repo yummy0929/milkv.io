@@ -50,8 +50,8 @@ export default function(props){
                   alignContent: 'space-around',
             }}>
                 <p style={pstyle}>Milk-V Machines</p>
-                <p style={pstyle}>China mainland call：(86) 0755-2778-4863</p>
-                <p style={pstyle}>Email：Contact@milkv.io</p>
+                <p style={pstyle}>Baoan, Shenzhen, China</p>
+                <p style={pstyle}>Email：support@milkv.io</p>
             </div>
             </div>
         </footer>
