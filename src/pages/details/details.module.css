@@ -28,19 +28,7 @@ body {
     margin-bottom: 0.5vh;
 }
 
-.buy {
-    color: #fff;
-    width: 11.62vw;
-    height: 8.44vh;
-    border-radius: 3vw;
-    border: 2px solid #fff;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    font-size: 2.57vw;
-    margin: 11.53vh auto 1.92vh;
-    position: relative;
-}
+
 
 .rotateImg {
     position: absolute; 
@@ -49,14 +37,11 @@ body {
     left: -13.68vw;
     top: 47.08vh;
     transform: rotate(-56.36deg);
-    z-index: 200;
+    z-index: 100;
     background: url(/static/img/Group.svg) no-repeat;
     background-size:  100%;
 }
-.right{
-    background: url(/static/img/arrow-right.svg) no-repeat;
-    background-size:  100%;
-}
+
 /* 阴影 */
 .shadow1 {
     position: absolute;
@@ -643,13 +628,7 @@ body {
     height: 2px;
     background: #929292;
 }
-.chartTech{
-    width: 68.78vw;
-    height: 83.65vh;
-    margin: 33.66vh auto 0;
-    background:url(/static/img/techSpecs.svg) no-repeat;
-    background-size: 100%;
-}
+
 .bannerimg{
     width: 21.88vw;
     height: 37.28vh;
@@ -744,4 +723,110 @@ body {
     top: 420vh;
     background: #01DEEA;
     filter: blur(10.42vw);
+}
+.chartTech{
+    width: 68.78vw;
+    height: 183.65vh;
+    margin: 33.66vh auto 0;
+    position: relative;
+}
+.tech_text1{
+    width: 100%;
+    height:22.11vh;
+    position: absolute;
+    top:4vh;
+    color: #fff;
+}
+.tech_title{
+    font-size: 2.874vw;
+}
+.tech_p{
+    margin-top: 3vh;
+    font-size: 1.556vw;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+.tech_text2{
+    width: 100%;
+    height:25.42vh;
+    position: absolute;
+    top:40vh;
+    color: #fff;
+}
+.tech_text2>h1{
+    margin-bottom: 4vh;
+}
+.tech_p_line{
+    font-size: 1.556vw;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0;
+}
+
+.tech_title3{
+    font-size: 2.874vw;
+    color: #fff;
+    position: absolute;
+    top:88vh
+}
+
+.pinImg{
+    position: absolute;
+    top: 96vh;
+    width: 68.78vw;
+    height: 59.82vh;
+    background: url(/static/img/FrameBig.png) no-repeat;
+    background-size: 100%;
+}
+.document{
+    position: absolute;
+    top: 155vh;
+}
+.document>h1{
+    color:#fff;
+    font-size: 2.874vw;
+}
+.document>ul{
+    width: 60vw;
+    height: 20vh;
+    margin-left: -1.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.down{
+    width: 1.563vw;
+    height: 1.563vw;
+    background: url(/static/img/download.svg) no-repeat;
+    background-size: 100%;
+    margin-right: 1vw;
+}
+.document>ul>li{
+    height: 2.5vh;
+    line-height: 3vh;
+    display: flex;
+    justify-content: start;
+}
+.link_down{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.55vw;
+}
+.shadow14{
+    position: absolute;
+    width: 35.64vw;
+    height: 35.64vw;
+    left: 82.17vw;
+    top: 444.5vh;
+    background: rgba(215, 207, 20, 0.32);
+    filter: blur(10.24vw);
 }

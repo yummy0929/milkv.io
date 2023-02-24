@@ -6,26 +6,18 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-color-primary: #86c9f3;
+  --ifm-color-primary-dark: #64baf0;
+  --ifm-color-primary-darker: #53b2ee;
+  --ifm-color-primary-darkest: #1f9be9;
+  --ifm-color-primary-light: #a8d8f6;
+  --ifm-color-primary-lighter: #b9e0f8;
+  --ifm-color-primary-lightest: #edf7fd;
+  --ifm-background-color: #f9fafb;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0);
 }
 body,html{
@@ -43,11 +35,56 @@ body,html{
 li{
   list-style: none;
 }
-#__docusaurus>div>.ant-carousel>.slick-slider>.slick-dots>li{
-
-  margin: 0 0 8vh 7vw;
+#__docusaurus{
+  background-color: #000;
 }
-#__docusaurus>div>.ant-carousel>.slick-slider>.slick-dots>li>button{
-  width: 0.1vw;
-  height: 7vh;
+#__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>li{
+  margin: 0 0 8vh 3vw;
+}
+#__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>li>button{
+  width: 0.3vw;
+  height: 6vh;
+}
+#__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>.slick-active>button{
+  height: 7.5vh;
+  background-color: #fff;
+}
+#__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots{
+  margin-left: 89.7vw;
+  margin-top: -2vh;
+  position: fixed;
+  right: 0;
+}
+
+/* footer */
+.footer{
+  position: relative;
+}
+.footer__link-separator{
+  display: none;
+}
+.footer_text1{
+  position: absolute;
+  left:62vw;
+  top: 3vh;
+  font-size: 1.2vw;
+}
+.footer_text2{
+  position: absolute;
+  left:62vw; top: 6vh;
+  font-size: 1.2vw;
+}
+.footer_text3{
+  position: absolute;
+  left:62vw;
+  font-size: 1.2vw;
+  top: 9vh;
+}
+.margin-bottom--sm{
+  margin-left: -60vw;
+}
+
+/* 弹窗 */
+.ant-modal-content{
+  height:60vh;
 }

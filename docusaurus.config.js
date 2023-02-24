@@ -1,32 +1,22 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+// const lightCodeTheme = require('prism-react-renderer/themes/github');
+// const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'MilkV',
   tagline: 'Everything about RISC-V',
-  // 站点图标
   favicon: 'img/favicon.ico',
-
-  // 你的网站URL（所创建的github仓库名）
-  url: 'https://milk-v.github.io',
-  baseUrl: '/milkv.io/',
-  // github账户名
+  url: 'https://milkv.io',
+  baseUrl: '/',
   organizationName: 'milk-v', 
-  // 刚所创建的github仓库名
   projectName: 'milkv.io',
 
 
-  // 死链处理
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
     locales: ['en'],
@@ -59,99 +49,73 @@ const config = {
   ],
 
   themeConfig:
+  
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      disableDarkModeSwitch: true,
+      disableThemeDesignSwitch: true,
       navbar: {
-        style:'dark',
         hideOnScroll:true,
         logo: {
           alt: 'My Site',
           src: 'img/ICON.svg',
-          style:{
-            width:'63px',
-            height:'18px',
-            margin:'5.5px 0 0 10px',
-          },
-          // href:"http://localhost:3000/",
         },
         items: [
           {
-            type: 'doc',
-            docId: 'intro',
+            type: 'dropdown',
+            label: 'product',
             position: 'right',
-            dropdownItemsAfter: [{to: '/docs/intro', label: '下拉1'}],
-            dropdownActiveClassDisabled: true,
+            items: [
+              {
+                label: 'Facebook',
+                href: '/#',
+              },
+              {
+                label: 'Facebook',
+                href: '/#',
+              },
+              // ... more items
+            ],
           },
           {
-            type: 'docsVersionDropdown',
-            // docId: 'intro',
+            type: 'dropdown',
+            label: 'Community',
             position: 'right',
-            label:'Community',
-            dropdownItemsAfter: [{to: '/', label: '下拉1'}],
-            dropdownActiveClassDisabled: true,
-          },
-          {
-            type: 'html',
-            position: 'right',
-            value: `<button style="border-radius:5px;padding:5px;">
-              <a href="http://baidu.com" style="color:#2D88C9" >Online shop</a>
-            </button>
-            `
+            items: [
+              {
+                label: 'Facebook',
+                href: '/#',
+              },
+              {
+                label: 'Facebook',
+                href: '/#',
+              },
+              // ... more items
+            ],
           },
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         logo:{
           src: 'img/ICON.svg',
+          style:{
+          }
         },
         links: [
           {
-            title: 'footer1',
-            items: [
-              {
-                label: 'A链接',
-                to: '/docs/intro',
-              },
-            ],
+            html:`<div class="footer_text1" style="color:#2D88C9;">Milk-V Machines</div>`
           },
           {
-            title: 'footer2',
-            items: [
-              {
-                label: 'B链接',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'C链接',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'D链接',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
+            html:`<div class="footer_text2" style="color:#2D88C9;">China mainland call：(86) 0755-2778-4863</div>`
           },
           {
-            title: 'footer3',
-            items: [
-              {
-                label: 'E链接',
-                to: '/blog',
-              },
-              {
-                label: 'E链接',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
+            html:`<div class="footer_text3" style="color:#2D88C9;">Email：Contact@ .io</div>`
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        // copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
-      prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-      },
+      
     }),
 };
 

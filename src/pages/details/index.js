@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import Link from '@docusaurus/Link';
-
-import cssList from "./details.module.css"
-import Footer from "../../components/Footer"
+import Layout from '@theme/Layout';
 import Head from "../../components/Head"
 
+
+import cssList from "./details.module.css"
 
 function DetailsPage() {
  const [num,setNum] = useState(0)
@@ -17,7 +17,10 @@ function DetailsPage() {
   if(num===-46.8) return
   setNum((num)=>num-23.4)
  }
-
+//  useEffect(()=>{
+//   console.log('清除详情')
+//   window.removeEventListener('wheel',function(e){e.preventDefault()})
+//  },[])
   return (
     <>
       <div style={{
@@ -35,13 +38,7 @@ function DetailsPage() {
           }}>Milk-V DUO</h1>
           <h2 className={cssList.textLine}>A 5$ RISC-V COMPUTER</h2>
           <p style={{ fontSize: "1.79vw" }}>Low cost, low power consumption, high performance</p>
-          <div className={cssList.buy}>
-            <Link to="/" style={{ color: "#fff",textDecoration:'none' }}>BUY</Link>
-            <div className={cssList.right} style={{
-              display: "block", width: '2.89vw', height: '2.89vw',
-              margin: "0.6vw 0 0 0.7vw"
-            }} ></div>
-          </div>
+          <Head/>
           <p style={{ fontSize: "1.377vw" }}>*Tax or shipping is not included </p>
         </div>
         <div className={cssList.rotateImg}></div>
@@ -157,14 +154,50 @@ function DetailsPage() {
           <div className={cssList.next} onClick={()=>onNext()}></div>
         </div>
         <div className={cssList.title4}>Tech specs</div>
-        <div className={cssList.chartTech}></div>
+        <div className={cssList.chartTech}>
+          <div className={cssList.tech_text1}>
+            <h1 className={cssList.tech_title}>Introduction</h1>
+            <p className={cssList.tech_p}>Milk-V DUO is an MPU capable of running LINUX and RTOS based on the SOPHGO CV180xB chip.Milk-V DUO provides professionals, industrial OEMs, IoT enthusiasts, hobbyists, DIYers and creators with a reliable, low-cost and extremely capable platform for building and tinkering with their ideas to make them a reality.</p>
+          </div>
+          <div className={cssList.tech_text2}>
+            <h1 className={cssList.tech_title}>Hardware </h1>
+            <p className={cssList.tech_p_line}>- SOPHGO CV1800B Chip</p>
+            <p className={cssList.tech_p_line}>- Dual-Core RISC-V CPU up to 1Ghz</p>
+            <p className={cssList.tech_p_line}>- 64MB RAM</p>
+            <p className={cssList.tech_p_line}>- Provides 10/100Mbps Ethernet via optional add-on board</p>
+            <p className={cssList.tech_p_line}>- AMP technology supports running both LINUX and RTOS</p>
+          </div>
+          <h1 className={cssList.tech_title3}>Pin Out</h1>
+          <div className={cssList.pinImg}></div>
+          <div className={cssList.document}>
+            <h1>Documents</h1>
+            <ul>
+              <li>
+                <div className={cssList.down}></div>
+                  <Link to='/' className={cssList.link_down} style={{textDecoration:'none'}}>DUO Product Brief V1.1.zip</Link>
+              </li>
+              <li>
+                <div className={cssList.down}></div>
+                  <Link to='/' className={cssList.link_down} style={{textDecoration:'none'}}>DUO Product Brief V1.1.zip</Link>
+              </li>
+              <li>
+                <div className={cssList.down}></div>
+                  <Link to='/' className={cssList.link_down} style={{textDecoration:'none'}}>DUO Product Brief V1.1.zip</Link>
+              </li>
+              <li>
+                <div className={cssList.down}></div>
+                  <Link to='/' className={cssList.link_down} style={{textDecoration:'none'}}>more...</Link>
+              </li>
+            </ul>
+          </div>
+        </div>
         <div className={cssList.shadow1}></div>
         <div className={cssList.shadow2}></div>
         <div className={cssList.shadow5}></div>
         <div className={cssList.shadow12}></div>
         <div className={cssList.shadow13}></div>
+        <div className={cssList.shadow14}></div>
       </div>
-      <Footer color='#fff' />
     </>
   )
 }
@@ -172,8 +205,9 @@ function DetailsPage() {
 export default function () {
   return (
     <>
-        <Head color="#fff"/>
+      <Layout>
         <DetailsPage></DetailsPage>
+      </Layout>
     </>
   )
 }

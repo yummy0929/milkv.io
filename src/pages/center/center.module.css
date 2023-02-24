@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.centerBox{
+    width: 100%;
+    height: 100%;
+    padding-bottom: 20vh;
+}
+
+.startbox{
+    width: 68.78vw;
+    height: 80vh;
+    margin: 0 auto;
+    background-color: #fff;
+}

@@ -24,7 +24,36 @@
     top: 0;
     left:63.22vw;
  }
-
+ .buy {
+   color: #fff;
+   width: 11.62vw;
+   height: 8.44vh;
+   border-radius: 3vw;
+   border: 2px solid #fff;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   line-height: 8.44vh;
+   font-size: 2.57vw;
+   margin: 11.53vh auto 1.92vh;
+   position: relative;
+   cursor: pointer;
+}
+.buy:hover{
+   background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%),
+   linear-gradient(0deg, #FFFFFF, #FFFFFF);
+}
+.buyText{
+   position: absolute;
+   left: 3vh;
+}
+.right{
+   background: url(/static/img/arrow-right.svg) no-repeat;
+   background-size:  100%;
+   position: absolute;
+   left: 8vw;
+   top: 1.3vh;
+}
  .select2{
     position: absolute;
     top: 0;
@@ -59,9 +88,7 @@
     border-radius: 0.416vh;
     cursor: pointer;
  }
- .header{
-  
- }
+
  .Logo{
     background: url(/static/img/ICON.svg) no-repeat;
     background-size: 100%;
@@ -118,7 +145,7 @@
     left:5.26vw;
     font-size: 1.595vw;
  }
- .chian>.right{
+ .chian>.right_text{
     width: 5vw;
     height: 9.829vh;
     line-height: 9.829vh;
@@ -127,7 +154,7 @@
     top:0;
     font-size: 1.595vw;
 }
- .other>.right{
+ .other>.right_text{
     width: 5vw;
     height: 9.829vh;
     line-height: 9.829vh;
@@ -161,3 +188,34 @@
     background-size: 100%;
     margin-left: -2vw;
  }
+
+ .login{
+   width: 3.764vw;
+   height: 3.764vw;
+   position: fixed;
+   right: 4.347vw;
+   top:70.39vh;
+   cursor: pointer;
+   background: url(/static/img/Frame4.svg) no-repeat;
+   background-size: 100%;
+   color: #fff;
+}
+.login:hover {
+   background: url(/static/img/Frame3.svg) no-repeat;
+   background-size: 100%;
+   color: #01E7CC;
+}
+.login>p{
+   font-size: 1.12vw;
+   width: 10vw;
+   margin: 8vh 0 0 -1vw;
+}
+/* .on4_p::after {
+   content: '';
+   position: absolute;
+   top: 0vh;
+   right: -1vw;
+   height: 1vw;
+   width: 0.1vw;
+   background: #666666;
+} */
