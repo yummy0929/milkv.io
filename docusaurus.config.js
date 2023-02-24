@@ -12,8 +12,8 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // 你的网站URL（所创建的github仓库名）
-  url: 'https://milk-v.github.io',
-  baseUrl: '/milkv.io/',
+  url: 'https://milkv.io',
+  baseUrl: '/',
   // github账户名
   organizationName: 'milk-v', 
   // 刚所创建的github仓库名
