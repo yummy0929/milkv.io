@@ -57,7 +57,7 @@ const config = {
             to: '/'
           },
           {
-            label: 'duo',
+            label: 'Duo',
             to: '/duo',
             position: 'right',
 
