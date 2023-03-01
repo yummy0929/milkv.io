@@ -1,26 +1,23 @@
-import React, { useState,useEffect } from 'react';
-import Link from '@docusaurus/Link';
+import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import Head from "../../components/Head"
 
+import Link from '@docusaurus/Link';
 
 import cssList from "./details.module.css"
 
 function DetailsPage() {
- const [num,setNum] = useState(0)
+  const [num, setNum] = useState(0)
 
- const  onPrve = () =>{
-  if(num==0) return
-  setNum((num)=>num+23.4)
- }
- const  onNext = () =>{
-  if(num===-46.8) return
-  setNum((num)=>num-23.4)
- }
-//  useEffect(()=>{
-//   console.log('清除详情')
-//   window.removeEventListener('wheel',function(e){e.preventDefault()})
-//  },[])
+  const onPrve = () => {
+    if (num == 0) return
+    setNum((num) => num + 23.4)
+  }
+  const onNext = () => {
+    if (num === -46.8) return
+    setNum((num) => num - 23.4)
+  }
+
   return (
     <>
       <div style={{
@@ -28,7 +25,7 @@ function DetailsPage() {
         width: '100%',
         height: '100%',
         overflow: "hidden",
-        paddingBottom: "8vh"
+        backgroundColor: '#000'
       }}>
         <div className={cssList.titleBox}>
           <p style={{ fontSize: "1.437vw", marginBottom: "0.42vh" }}>Meet</p>
@@ -38,7 +35,7 @@ function DetailsPage() {
           }}>Milk-V DUO</h1>
           <h2 className={cssList.textLine}>A 5$ RISC-V COMPUTER</h2>
           <p style={{ fontSize: "1.79vw" }}>Low cost, low power consumption, high performance</p>
-          <Head/>
+          <Head />
           <p style={{ fontSize: "1.377vw" }}>*Tax or shipping is not included </p>
         </div>
         <div className={cssList.rotateImg}></div>
@@ -71,7 +68,7 @@ function DetailsPage() {
               <div className={cssList.frame1}></div>
               <p>MicroSD support</p>
               <div className={cssList.shadow6}></div>
-            </div>        
+            </div>
             <div className={cssList.micList2}>
               <div className={cssList.frame2}></div>
               <p>64MB RAM</p>
@@ -84,12 +81,12 @@ function DetailsPage() {
             <div className={cssList.support}>Support Asymmetric multiprocessing</div>
             <div className={cssList.btnBox}>
               <div className={cssList.btnTask}>
-                <ul className={cssList.taskLeft} style={{marginLeft:"-1.7vw"}}>
+                <ul className={cssList.taskLeft} style={{ marginLeft: "-1.7vw" }}>
                   <li>...</li>
-                  <li>Task</li> 
+                  <li>Task</li>
                   <li>Task</li>
                 </ul>
-                <ul className={cssList.taskRight} style={{marginRight:"-0.4vw"}}>
+                <ul className={cssList.taskRight} style={{ marginRight: "-0.4vw" }}>
                   <li>Task</li>
                   <li>Task</li>
                   <li>...</li>
@@ -104,10 +101,10 @@ function DetailsPage() {
                   <div className={cssList.cpu}>CPU1</div>
                   <div className={cssList.cpu}>CPU2</div>
                 </div>
-                <div className={cssList.CUPtext}>Sharing Memory</div>   
+                <div className={cssList.CUPtext}>Sharing Memory</div>
               </div>
-                <div className={cssList.shadow8}></div>
-                <div className={cssList.shadow9}></div>
+              <div className={cssList.shadow8}></div>
+              <div className={cssList.shadow9}></div>
             </div>
           </div>
           <div className={cssList.lineChart}>
@@ -126,32 +123,32 @@ function DetailsPage() {
         <div className={cssList.title3}>Small size, big potentials</div>
         <div className={cssList.bannerList} >
           <div style={{
-          transform: `translateX(${num}vw)`,
-          transition:'1s'
-        }}>
-            <div className={cssList.bannerimg} style={{left:'0'}}>
-                <div className={cssList.img1} ></div>
+            transform: `translateX(${num}vw)`,
+            transition: '1s'
+          }}>
+            <div className={cssList.bannerimg} style={{ left: '0' }}>
+              <div className={cssList.img1} ></div>
               <p>smart door lock</p>
             </div>
-            <div className={cssList.bannerimg} style={{left:'23.4vw'}}>
-                 <div className={cssList.img2} ></div>
+            <div className={cssList.bannerimg} style={{ left: '23.4vw' }}>
+              <div className={cssList.img2} ></div>
               <p>Intelligent monitoring</p>
             </div>
-            <div className={cssList.bannerimg} style={{left:'46.8vw'}}>
-                 <div className={cssList.img3} ></div>
+            <div className={cssList.bannerimg} style={{ left: '46.8vw' }}>
+              <div className={cssList.img3} ></div>
               <p>Smart Street Light </p>
             </div>
-            <div className={cssList.bannerimg} style={{left:'70.2vw'}}>
-                 <div className={cssList.img4} ></div>
+            <div className={cssList.bannerimg} style={{ left: '70.2vw' }}>
+              <div className={cssList.img4} ></div>
               <p>Traffic Monitoring </p>
             </div>
-            <div className={cssList.bannerimg} style={{left:'93.6vw'}}>
-                 <div className={cssList.img5} ></div>
+            <div className={cssList.bannerimg} style={{ left: '93.6vw' }}>
+              <div className={cssList.img5} ></div>
               <p>Pedestrian detection</p>
             </div>
           </div>
-          <div className={cssList.prev} onClick={()=>onPrve()}></div>
-          <div className={cssList.next} onClick={()=>onNext()}></div>
+          <div className={cssList.prev} onClick={() => onPrve()}></div>
+          <div className={cssList.next} onClick={() => onNext()}></div>
         </div>
         <div className={cssList.title4}>Tech specs</div>
         <div className={cssList.chartTech}>
@@ -174,19 +171,10 @@ function DetailsPage() {
             <ul>
               <li>
                 <div className={cssList.down}></div>
-                  <Link to='/' className={cssList.link_down} style={{textDecoration:'none'}}>DUO Product Brief V1.1.zip</Link>
+                <a className={cssList.link_down} style={{ textDecoration: 'none' }} href="/DUOProductBriefv1.1.zip" download="DUOProductBriefv1.1.zip">DUO Product Brief V1.1.zip</a>
               </li>
               <li>
-                <div className={cssList.down}></div>
-                  <Link to='/' className={cssList.link_down} style={{textDecoration:'none'}}>DUO Product Brief V1.1.zip</Link>
-              </li>
-              <li>
-                <div className={cssList.down}></div>
-                  <Link to='/' className={cssList.link_down} style={{textDecoration:'none'}}>DUO Product Brief V1.1.zip</Link>
-              </li>
-              <li>
-                <div className={cssList.down}></div>
-                  <Link to='/' className={cssList.link_down} style={{textDecoration:'none'}}>more...</Link>
+
               </li>
             </ul>
           </div>
@@ -197,6 +185,35 @@ function DetailsPage() {
         <div className={cssList.shadow12}></div>
         <div className={cssList.shadow13}></div>
         <div className={cssList.shadow14}></div>
+        <div className={cssList.on5_box}>
+          <ul>
+            <li className={cssList.li}>
+              <h1 className={cssList.on5_box_h1}>Communiy</h1>
+              <p className={cssList.on5_box_p}>Join the Milk-V Matrix Chat channel to share your ideas with the developers all around the world.</p>
+              <div className={cssList.on5_bottom}>
+                <Link style={{ textDecoration: 'none', color: '#fff' }}>Get In Touch</Link>
+              </div>
+            </li>
+            <li className={cssList.li}>
+              <h1 className={cssList.on5_box_h1}>Wechat</h1>
+              <div className={cssList.on5_img}></div>
+              <div className={cssList.on5_bottom}>
+                <Link style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>
+              </div>
+            </li>
+            <li className={cssList.li}>
+              <h1 className={cssList.on5_box_h1}>QQ Group</h1>
+              <div className={cssList.on5_img_QQ}></div>
+              <div className={cssList.on5_bottom}>
+                <Link style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div className={cssList.riscBg}>
+          <h1 className={cssList.embrace}>Embrace the new era with DUO, </h1>
+          <h1 className={cssList.risc_v}>Let's make RISC-V better together.</h1>
+        </div>
       </div>
     </>
   )

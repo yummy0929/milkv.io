@@ -6,50 +6,56 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #86c9f3;
-  --ifm-color-primary-dark: #64baf0;
-  --ifm-color-primary-darker: #53b2ee;
-  --ifm-color-primary-darkest: #1f9be9;
-  --ifm-color-primary-light: #a8d8f6;
-  --ifm-color-primary-lighter: #b9e0f8;
-  --ifm-color-primary-lightest: #edf7fd;
-  --ifm-background-color: #f9fafb;
+  --ifm-color-primary: #2d88c9;
+  --ifm-color-primary-dark: #297ab5;
+  --ifm-color-primary-darker: #2674ab;
+  --ifm-color-primary-darkest: #205f8d;
+  --ifm-color-primary-light: #3b94d3;
+  --ifm-color-primary-lighter: #4599d5;
+  --ifm-color-primary-lightest: #64aadc;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0);
 }
-body,html{
-  /* background-color:#000000 ; */
+
+body,
+html {
   min-width: 320px;
   height: 100%;
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
 }
-li{
+
+li {
   list-style: none;
 }
-#__docusaurus{
-  background-color: #000;
+
+#__docusaurus {
+  background-color: #fff;
 }
-#__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>li{
+
+#__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>li {
   margin: 0 0 8vh 3vw;
 }
-#__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>li>button{
+
+#__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>li>button {
   width: 0.3vw;
   height: 6vh;
 }
-#__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>.slick-active>button{
+
+#__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>.slick-active>button {
   height: 7.5vh;
   background-color: #fff;
 }
-#__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots{
+
+#__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots {
   margin-left: 89.7vw;
   margin-top: -2vh;
   position: fixed;
@@ -57,34 +63,48 @@ li{
 }
 
 /* footer */
-.footer{
+.footer {
   position: relative;
 }
-.footer__link-separator{
+
+.footer__link-separator {
   display: none;
 }
-.footer_text1{
+
+.footer_text1 {
   position: absolute;
-  left:62vw;
+  left: 62vw;
   top: 3vh;
   font-size: 1.2vw;
 }
-.footer_text2{
+
+.footer_text2 {
   position: absolute;
-  left:62vw; top: 6vh;
+  left: 62vw;
+  top: 6vh;
   font-size: 1.2vw;
 }
-.footer_text3{
+
+.footer_text3 {
   position: absolute;
-  left:62vw;
+  left: 62vw;
   font-size: 1.2vw;
   top: 9vh;
 }
-.margin-bottom--sm{
+
+.margin-bottom--sm {
   margin-left: -60vw;
 }
 
 /* 弹窗 */
-.ant-modal-content{
-  height:60vh;
+.ant-modal-content {
+  height: 60vh;
+}
+
+.navbar__item {
+  color: #000 !important;
+}
+
+.navbar__item:hover {
+  color: #2d88c9 !important;
 }
