@@ -191,7 +191,7 @@ function HomepageHeader() {
                 <Head cd='on3'></Head>
               </div>
               <div className={styles.on4_bottom_right}>
-                <Link to="/piomeer" style={{ textDecoration: 'none', color: '#fff', width: '100%', height: '100%', display: 'block' }}>Learn more&gt;&gt;</Link>
+                <Link to="/pioneer" style={{ textDecoration: 'none', color: '#fff', width: '100%', height: '100%', display: 'block' }}>Learn more&gt;&gt;</Link>
               </div>
               <div className={styles.on4_pag}></div>
               <div className={styles.on4_show}></div>
