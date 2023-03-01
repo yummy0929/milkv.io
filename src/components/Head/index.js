@@ -24,8 +24,7 @@ export default function (props) {
         <>
             <div style={{ display: `${cd ? 'none' : 'block'}` }}>
                 {
-                    ele === 'home' ? <div className={css.login} onClick={showModal}><div className={css.Login_img}></div><p className={css.Login_p}>Online  shop</p></div> : <div className={css.buy} onClick={showModal}><div className={css.buyText}>BUY</div>
-                        <div className={css.right} style={{ display: "block", width: '2.89vw', height: '2.89vw' }} ></div></div>
+                    ele === 'home' ? <div className={css.login} onClick={showModal}><div className={css.Login_img}></div><p className={css.Login_p}>Online  shop</p></div> : <div className={css.buy} onClick={showModal}><div className={css.buyText}>BUY Now</div></div>
                 }
             </div>
             {
@@ -34,8 +33,8 @@ export default function (props) {
             <Modal
                 footer={null}
                 closeIcon={<div className={css.close}></div>}
-                width={'46.37vw'}
-                bodyStyle={{ height: '28.92vw', position: 'relative' }}
+                width={'55.6rem'}
+                bodyStyle={{ height: '35rem', position: 'relative' }}
                 open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
                 <div className={css.Logo}></div>
                 <div className={css.chian} onClick={() => toApp()}>

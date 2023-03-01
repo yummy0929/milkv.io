@@ -182,7 +182,7 @@ function HomepageHeader() {
                   <div className={styles.parameter}>32GB 3200Mhz DDR4</div>
                 </div>
                 <div className={styles.parBox2}>
-                  <div className={styles.parameter}>512GB M.2 SSD</div>
+                  <div className={styles.parameter}>1TB M.2 SSD</div>
                   <div className={styles.parameter}>5 SATA interfaces</div>
                   <div className={styles.parameter}>350W Power Apply</div>
                 </div>
@@ -209,7 +209,7 @@ function HomepageHeader() {
                     </div>
                   </li>
                   <li className={styles.li}>
-                    <h1 className={styles.on5_box_h1}>Wechat</h1>
+                    <h1 className={styles.on5_box_h1}>WeChat</h1>
                     <div className={styles.on5_img}></div>
                     <div className={styles.on5_bottom}>
                       <Link style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>

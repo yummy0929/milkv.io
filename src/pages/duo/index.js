@@ -11,11 +11,11 @@ function DetailsPage() {
 
   const onPrve = () => {
     if (num == 0) return
-    setNum((num) => num + 23.4)
+    setNum((num) => num + 28.06)
   }
   const onNext = () => {
-    if (num === -46.8) return
-    setNum((num) => num - 23.4)
+    if (num === -56.12) return
+    setNum((num) => num - 28.06)
   }
 
   return (
@@ -28,15 +28,15 @@ function DetailsPage() {
         backgroundColor: '#000'
       }}>
         <div className={cssList.titleBox}>
-          <p style={{ fontSize: "1.437vw", marginBottom: "0.42vh" }}>Meet</p>
+          <p style={{ fontSize: "1.5rem", marginBottom: "0.4rem" }}>Meet</p>
           <h1 style={{
-            fontSize: "5.98vw",
-            marginBottom: '4.8vh'
+            fontSize: "6.2rem",
+            marginBottom: '2.8rem'
           }}>Milk-V DUO</h1>
           <h2 className={cssList.textLine}>A 5$ RISC-V COMPUTER</h2>
-          <p style={{ fontSize: "1.79vw" }}>Low cost, low power consumption, high performance</p>
+          <p style={{ fontSize: "1.55rem" }}>Low cost, low power consumption, high performance</p>
           <Head />
-          <p style={{ fontSize: "1.377vw" }}>*Tax or shipping is not included </p>
+          <p style={{ fontSize: "1.25rem" }}>*Tax or shipping is not included </p>
         </div>
         <div className={cssList.rotateImg}></div>
         <div className={cssList.title_line}></div>
@@ -45,14 +45,14 @@ function DetailsPage() {
           <h1 className={cssList.chartTitle}>More powerful than others</h1>
           <p className={cssList.chartTitle2}>Dual Core RISC-V CPU up to</p>
           <div className={cssList.largeText}>
-            <p style={{ fontSize: "5.21vw", color: "#01F2AA", marginRight: "1vw" }}>1</p>
+            <p style={{ fontSize: "6.25rem", color: "#01F2AA", marginRight: "1.2rem" }}>1</p>
             <p>
-              <span style={{ fontSize: "5.21vw", color: "#fff" }}>G</span>
-              <span style={{ fontSize: "2.21vw", color: "#fff" }}>hz</span>
+              <span style={{ fontSize: "6.25rem", color: "#fff" }}>G</span>
+              <span style={{ fontSize: "2.65rem", color: "#fff" }}>hz</span>
             </p>
           </div>
           <p style={{
-            fontSize: "1vw", color: "#fff", marginRight: "1vw", position: "absolute", top: "26.52vh", left: "31vw"
+            fontSize: "1rem", color: "#fff", marginRight: "1rem", position: "absolute", top: "15.35rem", left: "37.1rem"
           }}>Vector Acceleration</p>
           <div className={cssList.shadow3}></div>
           <div className={cssList.shadow4}></div>
@@ -60,7 +60,7 @@ function DetailsPage() {
         </div>
         <div className={cssList.exhibits}>
           <div className={cssList.group2}>
-            <div className={cssList.textList}>10/100Mbps Ethernet thru optional add-on board</div>
+            <div className={cssList.textList}>10/100Mbps Ethernet via optional add-on board</div>
             <div className={cssList.exhibitsImg}></div>
           </div>
           <div className={cssList.micBox}>
@@ -80,29 +80,7 @@ function DetailsPage() {
             <div className={cssList.head}>Incredible, it's a AMP computer！</div>
             <div className={cssList.support}>Support Asymmetric multiprocessing</div>
             <div className={cssList.btnBox}>
-              <div className={cssList.btnTask}>
-                <ul className={cssList.taskLeft} style={{ marginLeft: "-1.7vw" }}>
-                  <li>...</li>
-                  <li>Task</li>
-                  <li>Task</li>
-                </ul>
-                <ul className={cssList.taskRight} style={{ marginRight: "-0.4vw" }}>
-                  <li>Task</li>
-                  <li>Task</li>
-                  <li>...</li>
-                </ul>
-              </div>
-              <div className={cssList.btnLinux}>
-                <div className={cssList.btnLeft}>Linux</div>
-                <div className={cssList.btnRight}>RTOS</div>
-              </div>
-              <div className={cssList.CBOx}>
-                <div className={cssList.CUPBOx}>
-                  <div className={cssList.cpu}>CPU1</div>
-                  <div className={cssList.cpu}>CPU2</div>
-                </div>
-                <div className={cssList.CUPtext}>Sharing Memory</div>
-              </div>
+
               <div className={cssList.shadow8}></div>
               <div className={cssList.shadow9}></div>
             </div>
@@ -119,30 +97,30 @@ function DetailsPage() {
               <div className={cssList.jj} ></div>
             </div>
           </div>
+          <div className={cssList.title3}>Small size, big potentials</div>
         </div>
-        <div className={cssList.title3}>Small size, big potentials</div>
         <div className={cssList.bannerList} >
           <div style={{
-            transform: `translateX(${num}vw)`,
+            transform: `translateX(${num}rem)`,
             transition: '1s'
           }}>
             <div className={cssList.bannerimg} style={{ left: '0' }}>
               <div className={cssList.img1} ></div>
               <p>smart door lock</p>
             </div>
-            <div className={cssList.bannerimg} style={{ left: '23.4vw' }}>
+            <div className={cssList.bannerimg} style={{ left: '28.06rem' }}>
               <div className={cssList.img2} ></div>
               <p>Intelligent monitoring</p>
             </div>
-            <div className={cssList.bannerimg} style={{ left: '46.8vw' }}>
+            <div className={cssList.bannerimg} style={{ left: '56.12rem' }}>
               <div className={cssList.img3} ></div>
               <p>Smart Street Light </p>
             </div>
-            <div className={cssList.bannerimg} style={{ left: '70.2vw' }}>
+            <div className={cssList.bannerimg} style={{ left: '84.18rem' }}>
               <div className={cssList.img4} ></div>
               <p>Traffic Monitoring </p>
             </div>
-            <div className={cssList.bannerimg} style={{ left: '93.6vw' }}>
+            <div className={cssList.bannerimg} style={{ left: '112.24rem' }}>
               <div className={cssList.img5} ></div>
               <p>Pedestrian detection</p>
             </div>
@@ -150,8 +128,8 @@ function DetailsPage() {
           <div className={cssList.prev} onClick={() => onPrve()}></div>
           <div className={cssList.next} onClick={() => onNext()}></div>
         </div>
-        <div className={cssList.title4}>Tech specs</div>
         <div className={cssList.chartTech}>
+          <div className={cssList.title4}>Tech specs</div>
           <div className={cssList.tech_text1}>
             <h1 className={cssList.tech_title}>Introduction</h1>
             <p className={cssList.tech_p}>Milk-V DUO is an MPU capable of running LINUX and RTOS based on the SOPHGO CV180xB chip.Milk-V DUO provides professionals, industrial OEMs, IoT enthusiasts, hobbyists, DIYers and creators with a reliable, low-cost and extremely capable platform for building and tinkering with their ideas to make them a reality.</p>

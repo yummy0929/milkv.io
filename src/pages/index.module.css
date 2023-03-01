@@ -237,16 +237,7 @@
     filter: blur(10.42vw);
 }
 
-.on3_shadow3 {
-    position: absolute;
-    width: 29.54vw;
-    height: 42.84vh;
-    left: 32.86vw;
-    top: 10.79vh;
-    background: url(/static//img/on3shadow3.svg) no-repeat;
-    background-size: 100%;
-    transform: rotate(0.17deg);
-}
+
 
 .on3_img {
     display: block;
@@ -355,9 +346,6 @@
     top: 32vh;
     width: 33vw;
     height: 26vh;
-    border: 1px solid #929292;
-    border-left: none;
-    border-bottom: none;
 }
 
 .box_list {
