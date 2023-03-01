@@ -52,6 +52,22 @@ const config = {
         },
         items: [
           {
+            label: 'Home',
+            position: 'right',
+            to: '/'
+          },
+          {
+            label: 'DUO',
+            to: '/details',
+            position: 'right',
+
+          },
+          {
+            position: 'right',
+            label: 'Pioneer',
+            to: '/center'
+          },
+          {
             type: 'dropdown',
             label: 'Doc',
             position: 'right',
@@ -68,22 +84,6 @@ const config = {
               },
             ],
           },
-          {
-            label: 'Home',
-            position: 'right',
-            to: '/'
-          },
-          {
-            label: 'DUO',
-            to: '/details',
-            position: 'right',
-
-          },
-          {
-            position: 'right',
-            label: 'Pioneer',
-            to: '/center'
-          },
         ],
       },
       footer: {
@@ -98,10 +98,7 @@ const config = {
             html: `<div class="footer_text1" style="color:#2D88C9;">Milk-V</div>`
           },
           {
-            html: `<div class="footer_text2" style="color:#2D88C9;">China mainland call：(86) 0755-2778-4863</div>`
-          },
-          {
-            html: `<div class="footer_text3" style="color:#2D88C9;">Email：Contact@milkv.io</div>`
+            html: `<div class="footer_text3" style="color:#2D88C9;">Email：support@milkv.io</div>`
           }
         ],
       },

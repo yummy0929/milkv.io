@@ -215,28 +215,43 @@
 }
 
 .login {
-   width: 3.764vw;
-   height: 3.764vw;
+   width: 5.764vw;
+   height: 5.764vw;
    position: fixed;
-   right: 4.347vw;
+   right: 3.247vw;
    top: 70.39vh;
    cursor: pointer;
-   background: url(/static/img/Frame4.svg) no-repeat;
-   background-size: 100%;
    color: #fff;
 }
 
 .login:hover {
-   background: url(/static/img/Frame3.svg) no-repeat;
-   background-size: 100%;
    color: #01E7CC;
 }
 
-.login>p {
+.Login_img {
+   width: 3.764vw;
+   height: 3.764vw;
+   margin: 0 auto;
+   background: url(/static/img/Frame4.svg) no-repeat;
+   background-size: 100%;
+}
+
+.Login_p {
+   height: 2vw;
+   font-size: 0.9vw;
+   text-align: center;
+}
+
+.login:hover .Login_img {
+   background: url(/static/img/Frame3.svg) no-repeat;
+   background-size: 100%;
+}
+
+/* .login>p {
    font-size: 1.12vw;
    width: 10vw;
-   margin: 8vh 0 0 -1vw;
-}
+   margin: 8vh auto -1vw;
+} */
 
 /* .on4_p::after {
    content: '';

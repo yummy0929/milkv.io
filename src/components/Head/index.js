@@ -24,7 +24,7 @@ export default function (props) {
         <>
             <div style={{ display: `${cd ? 'none' : 'block'}` }}>
                 {
-                    ele === 'home' ? <div className={css.login} onClick={showModal}><p>Online  shop</p></div> : <div className={css.buy} onClick={showModal}><div className={css.buyText}>BUY</div>
+                    ele === 'home' ? <div className={css.login} onClick={showModal}><div className={css.Login_img}></div><p className={css.Login_p}>Online  shop</p></div> : <div className={css.buy} onClick={showModal}><div className={css.buyText}>BUY</div>
                         <div className={css.right} style={{ display: "block", width: '2.89vw', height: '2.89vw' }} ></div></div>
                 }
             </div>

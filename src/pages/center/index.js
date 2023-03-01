@@ -225,7 +225,7 @@ function Center() {
             <h1 className={cCss.on5_box_h1}>Communiy</h1>
             <p className={cCss.on5_box_p}>Join the Milk-V Matrix Chat channel to share your ideas with the developers all around the world.</p>
             <div className={cCss.on5_bottom}>
-              <Link style={{ textDecoration: 'none', color: '#fff' }}>Get In Touch</Link>
+              <Link to='https://community.milkv.io/' style={{ textDecoration: 'none', color: '#fff' }}>Get In Touch</Link>
             </div>
           </li>
           <li className={cCss.li}>

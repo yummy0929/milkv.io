@@ -318,7 +318,7 @@
 .on3_h1 {
     font-family: 'Roboto';
     font-style: normal;
-    font-size: 9.37vw;
+    font-size: 7.7vw;
     font-weight: 700;
     position: absolute;
     top: 8vh;
@@ -345,7 +345,7 @@
     color: #fff;
     width: 100%;
     height: 100%;
-    border-radius: 0.78vw;
+    border-radius: 0.5vw;
     padding: 0 0.4vw;
 }
 
@@ -413,7 +413,6 @@
     top: 1.6vh;
     font-family: 'Inter';
     font-style: normal;
-    font-weight: 700;
     font-size: 1.563vw;
     color: #FFFFFF;
 }
@@ -421,8 +420,8 @@
 .txt_line::after {
     content: '';
     position: absolute;
-    right: 2.6vw;
-    bottom: -0.5vh;
+    right: 4vw;
+    bottom: -0.8vh;
     width: 40vw;
     height: 2px;
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
@@ -437,11 +436,21 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    font-size: 8vw;
+    font-size: 7.8vw;
     background: linear-gradient(90deg, #0F8DFF 0%, #01FEFF 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.on4_show {
+    position: absolute;
+    width: 16.88vw;
+    height: 16.88vw;
+    right: 15.7vw;
+    bottom: -12.7vw;
+    background: #01DEEA;
+    filter: blur(10.24vw);
 }
 
 .parBox {
@@ -470,7 +479,6 @@
     height: 4.4vh;
     line-height: 4.4vh;
     font-size: 1.12vw;
-    background-color: #000;
     border-radius: 5px;
     border: 1px solid #fff;
     color: #fff;
@@ -485,7 +493,6 @@
     height: 4.4vh;
     line-height: 4.4vh;
     font-size: 1.12vw;
-    background-color: #000;
     border-radius: 5px;
     border: 1px solid #fff;
     color: #fff;
@@ -738,7 +745,7 @@
 }
 
 .on5_box {
-    width: 75vw;
+    width: 72vw;
     /* width: 50vw; */
     height: 63.28vh;
     margin: 15.5vh auto;
@@ -752,8 +759,8 @@
 }
 
 .on5_box>ul>li {
-    flex: 1;
-    height: 50vh;
+    width: 20.94vw;
+    height: 56.73vh;
     border: 4px solid #fff;
     margin-right: 2vw;
     border-radius: 8px;
@@ -768,14 +775,13 @@
     font-size: 2.5vw;
     color: #fff;
     text-align: center;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    margin-top: 9.5vh;
 }
 
 .on5_box_p {
     width: 15vw;
-    margin: 0 auto;
-    font-size: 0.8vw;
+    margin: 6.41vh auto 0;
+    font-size: 0.9vw;
     color: #e5e5e5;
     text-align: center;
     font-weight: 400;
@@ -785,7 +791,7 @@
     flex-grow: 0;
     font-family: 'Inter';
     font-style: normal;
-    margin-bottom: 9vh;
+    margin-bottom: 8vh;
 }
 
 .on5_bottom {
@@ -796,25 +802,26 @@
     font-size: 1.12vw;
     background: linear-gradient(135deg, #665DCD 0%, #5FA4E6 44.76%, #D2AB67 100%);
     border-radius: 2px;
+    margin: 0 auto;
     position: absolute;
-    bottom: 10vh;
-    left: 6.6vw;
+    bottom: 9vh;
+    left: 5.96vw;
 }
 
 .on5_img {
-    width: 10vw;
-    height: 10vw;
+    width: 10.5vw;
+    height: 10.5vw;
     background: url(/static/img/ma.png) no-repeat;
     background-size: 100%;
-    margin: -5vh auto 0;
+    margin: -0 auto 0;
 }
 
 .on5_img_QQ {
-    width: 10vw;
-    height: 10vw;
+    width: 10.5vw;
+    height: 10.5vw;
     background: url(/static/img/QQ.png) no-repeat;
     background-size: 100%;
-    margin: -5vh auto 0;
+    margin: -0 auto 0;
 }
 
 .line {

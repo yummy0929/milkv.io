@@ -64,6 +64,7 @@ li {
 
 /* footer */
 .footer {
+  height: 15vh;
   position: relative;
 }
 
@@ -78,22 +79,18 @@ li {
   font-size: 1.2vw;
 }
 
-.footer_text2 {
-  position: absolute;
-  left: 62vw;
-  top: 6vh;
-  font-size: 1.2vw;
-}
 
 .footer_text3 {
   position: absolute;
   left: 62vw;
   font-size: 1.2vw;
-  top: 9vh;
+  top: 8vh;
 }
 
 .margin-bottom--sm {
-  margin-left: -60vw;
+  position: absolute;
+  top: 2.5vh;
+  left: 15vw;
 }
 
 /* 弹窗 */

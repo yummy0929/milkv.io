@@ -15,15 +15,6 @@ function HomepageHeader() {
   const [flag2, setFlag2] = useState(true)
   const [count, setCount] = useState(0)
 
-  useEffect(() => {
-    const community = document.querySelectorAll('.navbar__item')
-    community[1].onclick = (e) => {
-      e.preventDefault()
-      setCount(4)
-      setFlag1(false)
-      bannerBox.current.goTo(4)
-    }
-  }, []);
   function toScroll(e) {
     let gao = e.deltaY
     if (gao > 0) {
@@ -181,7 +172,7 @@ function HomepageHeader() {
             </div>
           </div>
           <div>
-            <div className={styles.contentStyle}>
+            <div className={styles.contentStyle} style={{ background: 'linear-gradient(284.67deg, #000B14 0%, #151818 49.57%, #001B1B 101.26%)' }}>
               <div className={styles.on4_txtBox}>
                 <p className={styles.this}>This is</p>
                 <p className={styles.txt_line}>RISC-V Developer  Motherboard/PC</p>
@@ -203,6 +194,7 @@ function HomepageHeader() {
                 <Link to="/center" style={{ textDecoration: 'none', color: '#fff', width: '100%', height: '100%', display: 'block' }}>Learn more&gt;&gt;</Link>
               </div>
               <div className={styles.on4_pag}></div>
+              <div className={styles.on4_show}></div>
             </div>
           </div>
           <div>
@@ -213,21 +205,21 @@ function HomepageHeader() {
                     <h1 className={styles.on5_box_h1}>Communiy</h1>
                     <p className={styles.on5_box_p}>Join the Milk-V Matrix Chat channel to share your ideas with the developers all around the world.</p>
                     <div className={styles.on5_bottom}>
-                      <Link to="/" style={{ textDecoration: 'none', color: '#fff' }}>Get In Touch</Link>
+                      <Link to='https://community.milkv.io/' style={{ textDecoration: 'none', color: '#fff' }}>Get In Touch</Link>
                     </div>
                   </li>
                   <li className={styles.li}>
                     <h1 className={styles.on5_box_h1}>Wechat</h1>
                     <div className={styles.on5_img}></div>
                     <div className={styles.on5_bottom}>
-                      <Link to="/" style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>
+                      <Link style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>
                     </div>
                   </li>
                   <li className={styles.li}>
                     <h1 className={styles.on5_box_h1}>QQ Group</h1>
                     <div className={styles.on5_img_QQ}></div>
                     <div className={styles.on5_bottom}>
-                      <Link to="/" style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>
+                      <Link style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>
                     </div>
                   </li>
                 </ul>

@@ -191,7 +191,7 @@ function DetailsPage() {
               <h1 className={cssList.on5_box_h1}>Communiy</h1>
               <p className={cssList.on5_box_p}>Join the Milk-V Matrix Chat channel to share your ideas with the developers all around the world.</p>
               <div className={cssList.on5_bottom}>
-                <Link style={{ textDecoration: 'none', color: '#fff' }}>Get In Touch</Link>
+                <Link to='https://community.milkv.io/' style={{ textDecoration: 'none', color: '#fff' }}>Get In Touch</Link>
               </div>
             </li>
             <li className={cssList.li}>
