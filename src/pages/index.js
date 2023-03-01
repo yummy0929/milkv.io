@@ -166,7 +166,7 @@ function HomepageHeader() {
                   <Head cd='on3'></Head>
                 </div>
                 <div className={styles.on3_bottom_right}>
-                  <Link to="/details" style={{ textDecoration: 'none', color: '#fff', width: '100%', height: '100%', display: 'block' }}>Learn more&gt;&gt;</Link>
+                  <Link to="/duo" style={{ textDecoration: 'none', color: '#fff', width: '100%', height: '100%', display: 'block' }}>Learn more&gt;&gt;</Link>
                 </div>
               </div>
             </div>
@@ -182,7 +182,7 @@ function HomepageHeader() {
                   <div className={styles.parameter}>32GB 3200Mhz DDR4</div>
                 </div>
                 <div className={styles.parBox2}>
-                  <div className={styles.parameter}>512GB M.2 SSD</div>
+                  <div className={styles.parameter}>1TB M.2 SSD</div>
                   <div className={styles.parameter}>5 SATA interfaces</div>
                   <div className={styles.parameter}>350W Power Apply</div>
                 </div>
@@ -191,7 +191,7 @@ function HomepageHeader() {
                 <Head cd='on3'></Head>
               </div>
               <div className={styles.on4_bottom_right}>
-                <Link to="/center" style={{ textDecoration: 'none', color: '#fff', width: '100%', height: '100%', display: 'block' }}>Learn more&gt;&gt;</Link>
+                <Link to="/piomeer" style={{ textDecoration: 'none', color: '#fff', width: '100%', height: '100%', display: 'block' }}>Learn more&gt;&gt;</Link>
               </div>
               <div className={styles.on4_pag}></div>
               <div className={styles.on4_show}></div>
@@ -209,7 +209,7 @@ function HomepageHeader() {
                     </div>
                   </li>
                   <li className={styles.li}>
-                    <h1 className={styles.on5_box_h1}>Wechat</h1>
+                    <h1 className={styles.on5_box_h1}>WeChat</h1>
                     <div className={styles.on5_img}></div>
                     <div className={styles.on5_bottom}>
                       <Link style={{ textDecoration: 'none', color: '#fff' }}>Scan QR code</Link>

@@ -22,10 +22,15 @@
 
 body,
 html {
-  min-width: 320px;
+  min-width: 20rem;
   height: 100%;
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+html {
+  font-size: 1rem !important;
+  background-color: #fff;
 }
 
 * {
@@ -42,29 +47,29 @@ li {
 }
 
 #__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>li {
-  margin: 0 0 8vh 3vw;
+  margin: 0 0 4.6875rem 3.5938rem;
 }
 
 #__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>li>button {
-  width: 0.3vw;
-  height: 6vh;
+  width: .3625rem;
+  height: 3.5rem;
 }
 
 #__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots>.slick-active>button {
-  height: 7.5vh;
+  height: 4.375rem;
   background-color: #fff;
 }
 
 #__docusaurus>#docusaurus_skipToContent_fallback>div>.ant-carousel>.slick-slider>.slick-dots {
-  margin-left: 89.7vw;
-  margin-top: -2vh;
+  margin-left: 145.5625rem;
+  margin-top: -1.125rem;
   position: fixed;
   right: 0;
 }
 
 /* footer */
 .footer {
-  height: 15vh;
+  height: 9.375rem;
   position: relative;
 }
 
@@ -73,29 +78,32 @@ li {
 }
 
 .footer_text1 {
+  font-weight: 700;
   position: absolute;
-  left: 62vw;
-  top: 3vh;
-  font-size: 1.2vw;
+  left: 102.5rem;
+  top: 2.75rem;
+  font-size: 1.3125rem;
 }
 
 
 .footer_text3 {
+  font-weight: 700;
+
   position: absolute;
-  left: 62vw;
-  font-size: 1.2vw;
-  top: 8vh;
+  left: 102.5rem;
+  font-size: 1.3125rem;
+  top: 5.6875rem;
 }
 
 .margin-bottom--sm {
   position: absolute;
-  top: 2.5vh;
-  left: 15vw;
+  top: 1.4625rem;
+  left: 17.9375rem;
 }
 
 /* 弹窗 */
 .ant-modal-content {
-  height: 60vh;
+  height: 35.125rem;
 }
 
 .navbar__item {

@@ -15,25 +15,12 @@ function Center() {
     else if (count == 1) setText('SWICH')
     else if (count == 2) setText('NAS')
   }, [count])
-  const onPrve = () => {
-    setCount(c => c - 1)
 
-    if (num == 0) {
-      return
-    }
-    setNum((num) => num + 69.534)
-  }
-  const onNext = () => {
-    setCount(c => c + 1)
 
-    if (num === -139.068) {
-      return
-    }
-    setNum((num) => num - 69.534)
-  }
   return (
     <div className={cCss.centerBox}>
       <div className={cCss.bigimg}>
+        <div className={cCss.pagBox}></div>
         <div className={cCss.titleBox}>
           <h1>Milk-V Pioneer</h1>
           <p>Make native RISC-V development possible</p>
@@ -159,16 +146,11 @@ function Center() {
             <div className={cCss.bannerT}>NAS</div>
           </div>
         </div>
-
-
-
-
       </div>
       <div className={cCss.footText}>
-        <div className={cCss.title6}>Tech specs</div>
         <div className={cCss.chartTech}>
+          <div className={cCss.title6}>Tech specs</div>
           <div className={cCss.tech_text1}>
-            <h1 className={cCss.tech_title}>Introduction</h1>
             <p className={cCss.tech_p}>Milk-V Pioneer is a developer motherboard based on SOPHON SG2042 in a standard mATX form factor. With PC-like interfaces and PC industrial compability, Pioneer provides native RISC-V development environment and RISC-V desktop experience. It is the first choice for RISC-V developers and hardware pioneers to experience the cutting edge technology of RISC-V. Embrace RISC-V, embrace the future. </p>
           </div>
           <div className={cCss.tech_text2}>

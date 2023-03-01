@@ -48,7 +48,7 @@ const config = {
         hideOnScroll: true,
         logo: {
           alt: 'My Site',
-          src: 'img/ICON.svg',
+          src: 'img/LogoNew.svg',
         },
         items: [
           {
@@ -57,15 +57,15 @@ const config = {
             to: '/'
           },
           {
-            label: 'DUO',
-            to: '/details',
+            label: 'duo',
+            to: '/duo',
             position: 'right',
 
           },
           {
             position: 'right',
             label: 'Pioneer',
-            to: '/center'
+            to: '/pioneer'
           },
           {
             type: 'dropdown',
@@ -95,7 +95,7 @@ const config = {
         },
         links: [
           {
-            html: `<div class="footer_text1" style="color:#2D88C9;">Milk-V</div>`
+            html: `<div class="footer_text1" style="color:#2D88C9;">Milk-V Machines</div>`
           },
           {
             html: `<div class="footer_text3" style="color:#2D88C9;">Email：support@milkv.io</div>`
